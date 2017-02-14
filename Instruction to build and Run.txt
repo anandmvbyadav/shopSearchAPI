@@ -1,0 +1,27 @@
+STS Eclips : 3.8.2
+JDK : jdk1.8.0_65
+gradle : 2.14.1
+
+use command prompt
+ 
+	build: gradle build
+	Run : java -jar build/libs/googleshop-rest-service-1.0.0.jar
+
+Test using Postman: 
+
+	POST : 	URL : http://localhost:8080/addShopDetails
+	JSON : 
+
+		{
+    	"shopName": "Vijay Sales", 
+    
+    
+		    	"shopAddress": {"address":"plot no.09, survey no.48/2, 			
+			prabhakar heights, below chate classes,, near rupee bank, pune nagar road chandan nagar, kharadi pune, pune, Maharashtra", 
+			"postCode":"411014"}
+		
+}
+
+	GET : 	URL : http://localhost:8080/getShopList?latitude=18.5629142&longitude=73.9317172
+  
+	
